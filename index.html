@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      class Person {
+        constructor() {
+          this.name = "";
+          this.lastname = "";
+          this.age = "";
+        }
+
+        setName(name) {
+          this.name = name;
+        }
+
+        setLastname(lastname) {
+          this.lastname = lastname;
+        }
+
+        setAge(age) {
+          this.age = age;
+        }
+
+        printDetails() {
+          return `Name: ${this.name}, Lastname: ${this.lastname}, age: ${this.age}`;
+        }        
+      }
+
+      var person = new Person();
+      person.setName("Dato");
+      person.setLastname("Zarandia");
+      person.setAge(25);
+
+      document.write(person.printDetails());
+
+    </script>
+</body>
+</html>
